@@ -26,7 +26,6 @@ pipeline {
                 sh '''
                 whoami
                 pwd
-                sudo su
                 whomami
                 docker build -t applicationimage .
                 docker images
