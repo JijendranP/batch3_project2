@@ -24,7 +24,10 @@ pipeline {
         stage('DOCKER'){
             steps{
                 sh '''
+                whoami
                 pwd
+                sudo su
+                whomami
                 sudo docker build -t applicationimage .
                 sudo docker images
                 sudo docker run -itd --name applicationcontainer -p 80:81 .
