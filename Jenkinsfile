@@ -28,10 +28,10 @@ pipeline {
                 pwd
                 sudo su
                 whomami
-                sudo docker build -t applicationimage .
-                sudo docker images
-                sudo docker run -itd --name applicationcontainer -p 80:81 .
-                sudo docker ps
+                docker build -t applicationimage .
+                docker images
+                docker run -itd --name applicationcontainer -p 80:81 .
+                docker ps
                  '''
             }
         }
