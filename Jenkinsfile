@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 
-                git credentialsId: 'github-cred', url: 'https://github.com/JijendranP/docker-tomcat-tutorial.git'
+                git credentialsId: 'github-cred', url: 'https://github.com/JijendranP/docker-tomcat-tutorial.git' // code+Dokerfile
             }
         }
 
